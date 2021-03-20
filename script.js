@@ -23,8 +23,14 @@ function showImagem() {
 }
 
 const fireBtn = document.querySelector('#fire');
+fireBtn.style.backgroundColor = 'rgb(255, 0, 0)';
+
 const waterBtn = document.querySelector('#water');
+waterBtn.style.backgroundColor = 'rgb(0, 0, 255)';
+
 const earthBtn = document.querySelector('#earth');
+earthBtn.style.backgroundColor = 'rgb(0, 128, 0)';
+
 const memeImageContainer = document.querySelector('#meme-image-container');
 
 console.log(fireBtn, waterBtn, earthBtn);
