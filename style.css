@@ -3,6 +3,11 @@
   padding: 0;
 } */
 
+#memezones {
+  display: flex;
+  justify-content: space-around;
+}
+
 #meme-text {
   color: white;
   font-size: 30px;
@@ -29,4 +34,11 @@
 #memeImage {
   width: 100%;
   height: 100%;
+}
+
+.memes-base {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
 }
