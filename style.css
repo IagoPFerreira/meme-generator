@@ -4,32 +4,23 @@
 } */
 
 #meme-text {
-  /* position: relative; */
   color: crimson;
   font-size: 25pt;
-  /* text-align: center; */
-  /* align-self: baseline; */
   position: absolute;
 }
 
 #meme-image-container {
-  background-color: aquamarine;
+  background-color: white;
+  border: 1px solid black;
   height: auto;
   width: 500px;
   margin-top: 5%;
-  /* position: relative; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  align-items: flex-start;
-  /* word-wrap: break-word; */
+  word-wrap: break-word;
 }
 
 #memeImage {
   width: 100%;
-  margin: 0;
-  background-size: cover;
-  background-position: center;
-  background-clip: content-box;
-  border-radius: 4%;
+  height: 100%;
 }
