@@ -1,9 +1,11 @@
-const textInput = document.querySelector('#text-input');
-const memeText = document.querySelector('#meme-text');
-const submitBtn = document.querySelector('#submit-button');
+function showText() {
+  const inputText = document.querySelector('#text-input');
+  inputText.addEventListener('keyup', (e) => {
+    const memeText = document.querySelector('#meme-text');
+    memeText.innerText = e.target.value;
+  });
+}
 
-submitBtn.addEventListener('click', () => {
-  memeText.innerText = textInput.value;
-
-  console.log(memeText);
-});
+window.onload = () => {
+  showText();
+};
