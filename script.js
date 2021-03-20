@@ -46,7 +46,7 @@ earthBtn.addEventListener('click', () => {
   memeContainer.style.border = 'green groove 6px';
 });
 
-let baseMemes = document.querySelector('#memes-de-base');
+const baseMemes = document.querySelector('#memes-de-base');
 console.log(baseMemes);
 baseMemes.addEventListener('click', (e) => {
   const newImage = document.querySelector('#memeImage');
