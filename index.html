@@ -8,13 +8,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="text-input" maxlength="60">
-  <input type="file" id='meme-insert'>
-  <!-- <button type="submit" id="submit-button">Enviar</button> -->
+  <fieldset>
+    <input type="text" id="text-input" maxlength="60">
+    <input type="file" id='meme-insert'>
+  </fieldset>
+
+  <button type="button" class="button" id="fire">Fire</button>
+  <button type="button" class="button" id="water">Water</button>
+  <button type="button" class="button" id="earth">Earth</button>
+
   <div id="meme-image-container">
     <div id='meme-text'></div>
     <div id="meme-image"></div>
-    
   </div>   
 
   <script src="script.js"></script>

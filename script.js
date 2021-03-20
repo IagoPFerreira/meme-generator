@@ -4,6 +4,8 @@ function showText() {
     const memeText = document.querySelector('#meme-text');
     memeText.innerText = e.target.value;
   });
+  const newText = document.createElement('p');
+  inputText.appendChild(newText);
 }
 
 function showImagem() {
@@ -19,6 +21,25 @@ function showImagem() {
     };
   });
 }
+
+const fireBtn = document.querySelector('#fire');
+const waterBtn = document.querySelector('#water');
+const earthBtn = document.querySelector('#earth');
+const memeImageContainer = document.querySelector('#meme-image-container');
+
+console.log(fireBtn, waterBtn, earthBtn);
+
+fireBtn.addEventListener('click', () => {
+  memeImageContainer.style.border = 'red dashed 1px';
+});
+
+waterBtn.addEventListener('click', () => {
+  memeImageContainer.style.border = 'blue double 5px';
+});
+
+earthBtn.addEventListener('click', () => {
+  memeImageContainer.style.border = 'green groove 6px';
+});
 
 window.onload = () => {
   showText();
