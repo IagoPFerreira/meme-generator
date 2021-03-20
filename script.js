@@ -36,7 +36,7 @@ const memeImageContainer = document.querySelector('#meme-image-container');
 console.log(fireBtn, waterBtn, earthBtn);
 
 fireBtn.addEventListener('click', () => {
-  memeImageContainer.style.border = 'red dashed 1px';
+  memeImageContainer.style.border = 'red dashed 3px';
 });
 
 waterBtn.addEventListener('click', () => {
