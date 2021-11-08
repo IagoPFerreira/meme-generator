@@ -30,6 +30,12 @@ waterBtn.style.backgroundColor = 'rgb(0, 0, 255)';
 const earthBtn = document.querySelector('#earth');
 earthBtn.style.backgroundColor = 'rgb(0, 128, 0)';
 
+const airBtn = document.querySelector('#air');
+airBtn.style.backgroundColor = 'rgb(136, 136, 136)';
+
+const semBorda = document.querySelector('#border-less');
+semBorda.style.backgroundColor = 'rgb(255, 255, 255)';
+
 const memeContainer = document.querySelector('#meme-image-container');
 
 console.log(fireBtn, waterBtn, earthBtn);
@@ -45,6 +51,14 @@ waterBtn.addEventListener('click', () => {
 earthBtn.addEventListener('click', () => {
   memeContainer.style.border = 'green groove 6px';
 });
+
+airBtn.addEventListener('click', () => {
+  memeContainer.style.border = 'turquoise solid 5px';
+});
+
+semBorda.addEventListener('click', () => {
+  memeContainer.style.border = 'none';
+})
 
 const baseMemes = document.querySelector('#memes-de-base');
 console.log(baseMemes);
